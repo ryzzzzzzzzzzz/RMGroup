@@ -419,6 +419,9 @@ img[alt="mascot"] {
 
 header {
     padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 header a {
@@ -433,7 +436,9 @@ header img {
 #logo {
     font-size: var(--font-size-72);
     color: var(--color-light-green);
-    margin-left: 2rem;
+    margin-left: -10rem;
+    text-transform: uppercase;
+    z-index: 100;
 }
 
 #logo:hover {
@@ -442,6 +447,12 @@ header img {
 
 .green {
     color: var(--color-green);
+}
+
+#plug {
+  width: 100rem;
+  height: 2rem;
+  z-index: -100;
 }
 
 /* ======================================== Header ======================================== */
