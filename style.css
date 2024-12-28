@@ -439,6 +439,7 @@ header img {
     margin-left: -10rem;
     text-transform: uppercase;
     z-index: 100;
+    text-wrap: nowrap;
 }
 
 #logo:hover {
@@ -659,6 +660,9 @@ footer span {
 /* ======================================== Media queries ======================================== */
 
 @media (max-width: 1900px) {
+  #logo {
+    margin-left: 0;
+  }
   #first {
     flex-direction: column;
     text-align: center;
