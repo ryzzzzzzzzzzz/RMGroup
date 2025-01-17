@@ -375,6 +375,7 @@
     font-family: 'ft40';
     font-style: normal;
     font-weight: normal;
+    font-display: fallback;
     src: url('./fonts/ft40.eot'); /* IE9 Compat Modes */
     src: url('./fonts/ft40.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('./fonts/ft40.woff') format('woff'), /* Modern Browsers */
@@ -392,6 +393,8 @@
 html, body {
   background-color: var(--color-dark-blue);
   font-family: 'ft40';
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -638,6 +641,8 @@ figure figcaption span {
 
 footer {
   text-align: right;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 footer a {
@@ -679,6 +684,7 @@ footer span {
   }
   #warranty-items {
     justify-content: space-between;
+    margin-right: 8rem;
   }
   #left * {
     left: 0;
@@ -691,6 +697,9 @@ footer span {
   }
   #righht li:nth-child(4) {
     left: 0;
+  }
+  footer {
+    margin-right: 2rem;
   }
 }
 
@@ -714,18 +723,29 @@ footer span {
 }
 
 @media screen and (max-width: 1240px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  #plug {
+    display: none;
+  }
+  #warranty-items {
+    margin-right: 0;
+  }
   #shops {
-    margin: 40rem auto 0;
+    margin: 35rem auto 0;
   }
   #soon {
     left: 0;
     margin: 0 auto;
+    top: 25rem;
   }
   figure {
     display: none;
   }
   #second {
-    margin-top: 6rem;
+    margin-top: -1rem;
   }
   #warranty-items {
     flex-direction: column;
@@ -739,6 +759,9 @@ footer span {
 @media screen and (max-width: 720px) {
   img[alt="mascot"] {
     display: none;
+  }
+  footer {
+    margin: 0 auto;
   }
 }
 
@@ -775,12 +798,6 @@ footer span {
   }
   .green {
     font-size: var(--font-size-24);
-  }
-  footer {
-    text-align: left;
-  }
-  footer span {
-    font-size: var(--font-size-18);
   }
 }
 
